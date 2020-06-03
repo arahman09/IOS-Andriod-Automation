@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name ="Integration App Test Automation Script" parallel="false">
+
+    <parameter name="OS" value="IOS"/>
+    <parameter name="appType" value="phone"/>
+    <parameter name="deviceType" value="Simulator"/>
+    <parameter name="deviceName" value="iPhone 8"/>
+    <parameter name="version" value="13.4.1"/>
+    <parameter name="moduleName" value="Integrator-Android"/>
+    <parameter name="udid" value="90D429D3-D9EE-45E3-8E63-FAD59B7EE5DD"/>
+    <parameter name="appName" value="IntegrationApp.app"/>
+
+    <test name = "Integration App Test">
+
+        <classes>
+            <class name="testing.HomePageTest" />
+        </classes>
+
+    </test>
+
+</suite>
+
